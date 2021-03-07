@@ -30,11 +30,9 @@ const Cart = (props) => {
           <p><small>Tax + VAT:{formateNumber(tax)}</small></p>
           <p>Total Price: {formateNumber(grandTotal)}</p> 
           <br/>
-          <Link to="/review">
-          <button className="main-button">Review Order</button>
-          </Link>
-          
-
+          {
+              props.children
+          }
         </div>
     );
 };
